@@ -19,10 +19,10 @@ function Crime({ crime, date, name, mobileNumber, description, coordinates }) {
               Mobile Number: {mobileNumber}
             </h2>
             <p className="leading-relaxed">{description}</p>
-            <button className="bg-red-400 p-2 text-white font-semibold rounded-md">
+            <button className="photo bg-red-400 p-2 text-white font-semibold rounded-md">
               See Photos
             </button>
-            <Link href={`https://www.google.com/maps?q=${coordinates.lat},${coordinates.long}`} className="text-red-400 mx-4 inline-flex items-center mt-4" target='_blank' >
+            <Link href={`https://www.google.com/maps?q=${coordinates.lat},${coordinates.long}`} className="link text-red-400 mx-4 inline-flex items-center mt-4" target='_blank' >
               Get Location
             </Link>
           </div>
