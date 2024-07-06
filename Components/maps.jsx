@@ -1,34 +1,34 @@
 'use client'
 
-import React, { useEffect, useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import axios from "axios";
+// import React, { useEffect, useState } from "react";
+// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+// import "leaflet/dist/leaflet.css";
+// import axios from "axios";
 
 const Map = () => {
-  const [crimeArray, setCrimeArray] = useState([]);
+  // const [crimeArray, setCrimeArray] = useState([]);
 
-  useEffect(() => {
-    axios({
-      url: "http://localhost:3000/api/getallData",
-      method: "GET",
-    })
-      .then((res) => {
-        setCrimeArray(res.data);
-        console.log(res.data);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios({
+  //     url: "http://localhost:3000/api/getallData",
+  //     method: "GET",
+  //   })
+  //     .then((res) => {
+  //       setCrimeArray(res.data);
+  //       console.log(res.data);
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //     });
+  // }, []);
 
-  // Static coordinates for initial center
-  const center = [23.243363, 79.636530];
-  const zoom = 9;
+  // // Static coordinates for initial center
+  // const center = [23.243363, 79.636530];
+  // const zoom = 9;
 
   return (
     <div>
-      <MapContainer
+      {/* <MapContainer
         center={center}
         className="map self-center w-screen h-[92vh] rounded-md border-5 border-black"
         zoom={zoom}
@@ -47,8 +47,8 @@ const Map = () => {
             </Popup>
           </Marker>
         ))}
-      </MapContainer>
-  
+      </MapContainer> */}
+hi
     </div>
   );
 };
