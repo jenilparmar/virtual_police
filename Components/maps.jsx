@@ -6,6 +6,18 @@ const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.Map
   ssr: false, // This line ensures that the component is not rendered on the server
 });
 
+const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLayer), {
+  ssr: false, // This line ensures that the component is not rendered on the server
+});
+
+const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), {
+  ssr: false, // This line ensures that the component is not rendered on the server
+});
+
+const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
+  ssr: false, // This line ensures that the component is not rendered on the server
+});
+
 import "leaflet/dist/leaflet.css";
 import axios from "axios";
 
