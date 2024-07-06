@@ -24,7 +24,7 @@ function Page() {
   }
 
   axios({
-    url:"http://localhost:3000/api/postCrimeReport",
+    url:"https://virtual-police-hgxv.vercel.app/api/postCrimeReport",
     method:"POST",
     data:formdata
   })

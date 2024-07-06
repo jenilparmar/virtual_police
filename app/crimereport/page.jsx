@@ -7,7 +7,7 @@ function Page() {
   const [crime, setCrime] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/getallData")
+    axios.get("https://virtual-police-hgxv.vercel.app/api/getallData")
   
       .then(res => {
         const data = res.data;
