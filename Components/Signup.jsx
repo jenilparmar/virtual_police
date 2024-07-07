@@ -2,9 +2,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import axios from "axios";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 const Signup = () => {
   const router = useRouter();
+
 const [name , setName] = useState("");
 const [email , setEmail] = useState("");
 const [password , setPassword] = useState("");

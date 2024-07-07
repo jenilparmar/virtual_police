@@ -40,7 +40,7 @@ const Map = () => {
 
   // Static coordinates for initial center
   const center = [23.243363, 79.636530];
-  const zoom = 9;
+  const zoom = 5;
 
   return (
     <div>
