@@ -2,6 +2,7 @@
 
 import React, { useState ,useEffect} from "react";
 import axios from 'axios';
+import Loader from "@/Components/Loader";
 
 function Page() {
   const [latitude, setLatitude] = useState(null);
@@ -12,7 +13,10 @@ function Page() {
  const [name , setName] = useState("");
  const [mobileNumber , setMobileNumber] = useState("");
  const [discription , setDiscription] = useState("");
+ const [loaderActive, setLoaderActive] = useState(false);
+
  const handleSubmit=()=>{
+  setLoaderActive(true)
   const formdata = {
     crime:typeOfCrime,
     date:date,
@@ -29,6 +33,7 @@ function Page() {
     data:formdata
   })
   .then(res=>{
+    setLoaderActive(false)
     console.log(res);
     alert("Crime reported Successfully")
     setDate("");
@@ -55,7 +60,8 @@ function Page() {
   }
 }, []);
   return (
-    <div className="w-screen h-screen bg-gray-900 flex flex-col">
+   
+      loaderActive?<Loader/>: <div className="w-screen h-screen bg-gray-900 flex flex-col">
       <h1 className="self-center text-2xl font-bold text-blue-400 mt-4">
         Crime Report
       </h1>
