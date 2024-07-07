@@ -14,11 +14,14 @@ function Crime({ crime, date, name, mobileNumber, description, coordinates, imag
           </div>
           <div className="md:flex-grow">
             <h2 className="text-xl font-medium text-white title-font mb-2 text-nowrap">
-              Name: {name}
+              Name: {name?name:"Anonymous"}
               <br />
-              Mobile Number: {mobileNumber}
+              Mobile Number: {mobileNumber?mobileNumber:'Not Given'}
             </h2>
-            <p className="leading-relaxed">{description}</p>
+            <p className="leading-relaxed m-2">{description}</p>
+            <Link href={`https://www.google.com/maps?q=${coordinates.lat},${coordinates.long}`} className="link text-blue-400 mx-4 inline-flex items-center mt-4" target='_blank'>
+              Get Location
+            </Link>
             {image && (
               <a
                 href={image}
@@ -28,9 +31,6 @@ function Crime({ crime, date, name, mobileNumber, description, coordinates, imag
                 Download Photo
               </a>
             )}
-            <Link href={`https://www.google.com/maps?q=${coordinates.lat},${coordinates.long}`} className="link text-blue-400 mx-4 inline-flex items-center mt-4" target='_blank'>
-              Get Location
-            </Link>
           </div>
         </div>
       </div>

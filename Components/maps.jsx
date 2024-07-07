@@ -1,21 +1,21 @@
 'use client'
 import React, { useEffect, useState } from "react";
-import dynamic from "next/dynamic"; // or import dynamic from "next/dynamic"; for Next.js
+import dynamic from "next/dynamic"; // Import dynamic for Next.js
 
 const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), {
-  ssr: false, // This line ensures that the component is not rendeblue on the server
+  ssr: false, // This line ensures that the component is not rendered on the server
 });
 
 const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLayer), {
-  ssr: false, // This line ensures that the component is not rendeblue on the server
+  ssr: false, // This line ensures that the component is not rendered on the server
 });
 
 const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), {
-  ssr: false, // This line ensures that the component is not rendeblue on the server
+  ssr: false, // This line ensures that the component is not rendered on the server
 });
 
 const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
-  ssr: false, // This line ensures that the component is not rendeblue on the server
+  ssr: false, // This line ensures that the component is not rendered on the server
 });
 
 import "leaflet/dist/leaflet.css";
@@ -53,7 +53,7 @@ const Map = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-        {crimeArray.map((crime, index) => (
+        {crimeArray.filter(crime => crime.latitude && crime.longitude).map((crime, index) => (
           <Marker key={index} position={[crime.latitude, crime.longitude]}>
             <Popup className="text-black flex flex-col font-medium">
               <p>Crime type: {crime.crime}</p>
