@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import axios from "axios";
-
+import { useRouter } from "next/navigation";
 const Signup = () => {
+  const router = useRouter();
 const [name , setName] = useState("");
 const [email , setEmail] = useState("");
 const [password , setPassword] = useState("");
@@ -23,6 +24,9 @@ const [role , setRole] = useState("");
       method:"POST",
       data:formData
     })
+    if(res.ok){
+      router.push('home')
+    }
     setName("");
     setEmail("");
     setAge("")
