@@ -26,7 +26,7 @@ const Map = () => {
 
   useEffect(() => {
     axios({
-      url: "https://virtual-police-hgxv.vercel.app/api/getallData",
+      url: "https://virtual-police.vercel.app/api/getallData",
       method: "GET",
     })
       .then((res) => {

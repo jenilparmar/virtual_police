@@ -24,7 +24,7 @@ const [role , setRole] = useState("");
       method:"POST",
       data:formData
     })
-    if(res.ok){
+    if(res.status==200){
       router.push('/home')
     }
     setName("");
