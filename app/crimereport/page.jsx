@@ -14,7 +14,7 @@ function Page() {
   
       .then(res => {
         const data = res.data;
-        setLoaderActive(true)
+        setLoaderActive(false)
         setCrime(data);
         // console.log(crime); // Log the data directly received from the API
       })
