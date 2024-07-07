@@ -7,7 +7,7 @@ const nextConfig = {
                 source: "/api/:path*",
                 headers: [
                     { key: "Access-Control-Allow-Credentials", value: "true" },
-                    { key: "Access-Control-Allow-Origin", value: "192.168.242.141:3000/" }, // specify one origin here
+                    { key: "Access-Control-Allow-Origin", value: "https://virtual-police-hgxv.vercel.app" }, // specify one origin here
                     { key: "Access-Control-Allow-Origin", value: "192.168.242.141:3000/map" }, // specify one origin here
                     { key: "Access-Control-Allow-Origin", value: "/" }, // specify one origin here
                     { key: "Access-Control-Allow-Origin", value: "http://localhost:3000" }, // or use a single string for multiple origins
