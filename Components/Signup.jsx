@@ -56,7 +56,7 @@ const [role , setRole] = useState("");
               onChange={(e)=>{
                 setName(e.target.value);
               }}
-              className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-text-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="flex gap-4 mb-4">
@@ -71,7 +71,7 @@ const [role , setRole] = useState("");
                 onChange={(e)=>{
                   setAge(e.target.value);
                 }}
-                className="w-full h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-text-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative h-10 w-1/2">
@@ -84,7 +84,7 @@ const [role , setRole] = useState("");
                 onChange={(e)=>{
                   setRole(e.target.value);
                 }}
-                className="w-full h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-text-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               >
                 <option value="citizen">Citizen</option>
                 <option value="policeman">Policeman</option>
@@ -103,7 +103,7 @@ const [role , setRole] = useState("");
               onChange={(e)=>{
                 setEmail(e.target.value);
               }}
-              className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-text-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -117,15 +117,15 @@ const [role , setRole] = useState("");
               onChange={(e)=>{
                 setPassword(e.target.value);
               }}
-              className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-text-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
-          <button onClick={hanndleSubmit} className="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">
+          <button onClick={hanndleSubmit} className="text-white bg-blue-500  border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">
             Sign Up
           </button>
           <div className="text-xs mt-3 flex flex-row gap-2">Already have an account? 
             <Link href={'/Login'}>
-            <div className="cursor-pointer text-red-500">
+            <div className="cursor-pointer text-blue-500">
               Login
             </div></Link>
           </div>

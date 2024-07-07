@@ -56,7 +56,7 @@ function Page() {
 }, []);
   return (
     <div className="w-screen h-screen bg-gray-900 flex flex-col">
-      <h1 className="self-center text-2xl font-bold text-red-400 mt-4">
+      <h1 className="self-center text-2xl font-bold text-blue-400 mt-4">
         Crime Report
       </h1>
       <label htmlFor="typeofCrime" className="px-8 mt-4">
@@ -68,7 +68,7 @@ function Page() {
         onChange={(e)=>{
          setTypeOfCrime(e.target.value)
         }}
-        className="w-10/12 self-center h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+        className="w-10/12 self-center h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
       >
         <option value="Assault">Assault</option>
         <option value="Burglary">Burglary</option>
@@ -94,10 +94,10 @@ function Page() {
           setDate(e.target.value)
          }}
         placeholder="Date-time"
-        className="w-10/12 placeholder:text-white self-center h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-        required
+        className="w-10/12 placeholder:text-white self-center h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+        requiblue
       />
-      <h1 className="self-center text-2xl font-bold text-red-400 mt-4">
+      <h1 className="self-center text-2xl font-bold text-blue-400 mt-4">
         Your Information
       </h1>
       <input
@@ -106,7 +106,7 @@ function Page() {
         onChange={(e)=>{
           setName(e.target.value)
          }}
-        className="mt-2 w-10/12 placeholder:text-white self-center h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+        className="mt-2 w-10/12 placeholder:text-white self-center h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         placeholder="Your Name (Optional)"
         id=""
       />
@@ -116,7 +116,7 @@ function Page() {
         onChange={(e)=>{
           setMobileNumber(e.target.value)
          }}
-        className="mt-2 w-10/12 placeholder:text-white self-center h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+        className="mt-2 w-10/12 placeholder:text-white self-center h-10 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         placeholder="Your Phone Number (Optional)"
         id=""
       />
@@ -127,7 +127,7 @@ function Page() {
         onChange={(e)=>{
           setDiscription(e.target.value)
          }}
-        className="mt-2 w-10/12 placeholder:text-white self-center bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+        className="mt-2 w-10/12 placeholder:text-white self-center bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         placeholder="Describe the crime here..."
       ></textarea>
       <label htmlFor="photo" className="px-8 mt-2">
@@ -137,9 +137,9 @@ function Page() {
         type="file"
         id="photo"
         name="photo"
-        className="mt-2 w-10/12 self-center h-12 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-red-900 rounded border border-gray-600 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+        className="mt-2 w-10/12 self-center h-12 bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
       />
-      <button className="p-3 mt-4 bg-red-400 rounded-md w-4/12 font-bold self-center" onClick={()=>{
+      <button className="p-3 mt-4 bg-blue-400 rounded-md w-4/12 font-bold self-center" onClick={()=>{
         handleSubmit();
       }}>
         Submit

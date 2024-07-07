@@ -3,19 +3,19 @@ import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic"; // or import dynamic from "next/dynamic"; for Next.js
 
 const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), {
-  ssr: false, // This line ensures that the component is not rendered on the server
+  ssr: false, // This line ensures that the component is not rendeblue on the server
 });
 
 const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLayer), {
-  ssr: false, // This line ensures that the component is not rendered on the server
+  ssr: false, // This line ensures that the component is not rendeblue on the server
 });
 
 const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), {
-  ssr: false, // This line ensures that the component is not rendered on the server
+  ssr: false, // This line ensures that the component is not rendeblue on the server
 });
 
 const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
-  ssr: false, // This line ensures that the component is not rendered on the server
+  ssr: false, // This line ensures that the component is not rendeblue on the server
 });
 
 import "leaflet/dist/leaflet.css";

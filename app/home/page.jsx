@@ -12,7 +12,7 @@ function page(props) {
                 <h2 class="text-xs  tracking-widest font-medium title-font mb-1">
                   Welcome
                 </h2>
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-red-400">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-400">
                  Jenil parmar
                 </h1>
                 <p class="lg:w-2/3 mx-auto leading-tight text-base">
@@ -25,7 +25,7 @@ function page(props) {
                     Infromation About Crime
                   </h2>
                 <div className="flex flex-row gap-4">
-                <FaWpforms className=" w-16 h-16 text-red-400 " />
+                <FaWpforms className=" w-16 h-16 text-blue-400 " />
                 <p class=" text-wrap max-w-fit text-base mb-4">
                    Add Information about Time,Location,Type,
                    Discription(Optional).
@@ -38,7 +38,7 @@ function page(props) {
                   </h2>
                 <div>
               <div className="flex flex-row gap-4">
-              <MdImageSearch className=" w-16 h-16 text-red-400 " />
+              <MdImageSearch className=" w-16 h-16 text-blue-400 " />
                   <p class=" text-base mb-4 self-center my-2">
                     Click the Images and upload if possible.
                   </p>
@@ -51,7 +51,7 @@ function page(props) {
                   </h2>
                   <div className="flex flex-row gap-4">
     
-                  <IoPerson className="w-12 h-12 text-red-400 "/>
+                  <IoPerson className="w-12 h-12 text-blue-400 "/>
                   <p class=" text-base mb-4 self-center ">
                    Submit your Information (Optional).
                   </p>
@@ -59,7 +59,7 @@ function page(props) {
                 </div>
               </div>
              <Link href={'/form'}>
-             <button class="flex mx-auto mb-8 mt-4 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">
+             <button class="flex mx-auto mb-8 mt-4 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">
                 Report Crime
               </button>
              </Link>

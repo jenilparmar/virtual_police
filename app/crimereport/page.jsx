@@ -21,10 +21,10 @@ function Page() {
 
   return (
     <section className="text-gray-400 bg-gray-900 body-font h-screen overflow-hidden">
-      <h1 className="relative top-10 text-xl font-bold text-red-400 text-center">
+      <h1 className="relative top-10 text-xl font-bold text-blue-400 text-center">
         Crime Reports
       </h1>
-      <div className="h-1 w-10/12 self-center bg-red-400 rounded-sm relative top-12 left-8"></div>
+      <div className="h-1 w-10/12 self-center bg-blue-400 rounded-sm relative top-12 left-8"></div>
       <br />
       <br />
       {crime.map((crm, idx) => (

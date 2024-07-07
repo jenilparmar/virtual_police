@@ -16,7 +16,7 @@ function Navar() {
   return (
     <>
       {flag && (
-        <div className="nav z-10 fixed text-red-400 text-2xl flex flex-row justify-evenly bottom-2 left-4 align-middle bg-gray-800 w-11/12 rounded-md h-12 self-center">
+        <div className="nav z-10 fixed text-blue-400 text-2xl flex flex-row justify-evenly bottom-2 left-4 align-middle bg-gray-800 w-11/12 rounded-md h-12 self-center">
           <Link className="self-center" href={"/home"}>
             <div className="flex flex-col justify-center self-center text-xl">
               <IoHome className="self-center" />
