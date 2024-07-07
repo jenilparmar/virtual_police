@@ -20,7 +20,7 @@ const [role , setRole] = useState("");
       password:password
     }
    const res = await axios({
-      url:"https://virtual-police-hgxv.vercel.app/api/addLogin",
+      url:"https://virtual-police.vercel.app/api/addLogin",
       method:"POST",
       data:formData
     })

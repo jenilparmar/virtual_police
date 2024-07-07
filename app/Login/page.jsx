@@ -12,7 +12,7 @@ const LoginPage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("https://virtual-police-hgxv.vercel.app/api/addLogin", { cache: 'no-store' });
+      const res = await fetch("https://virtual-police.vercel.app/api/addLogin", { cache: 'no-store' });
       const data = await res.json();
       setData(data);
     };
