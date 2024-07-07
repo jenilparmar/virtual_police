@@ -25,7 +25,7 @@ const [role , setRole] = useState("");
       data:formData
     })
     if(res.ok){
-      router.push('home')
+      router.push('/home')
     }
     setName("");
     setEmail("");
