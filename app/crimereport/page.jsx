@@ -24,7 +24,7 @@ function Page() {
   }, []);
 
   return (
-    loaderActive?<Loader/>:<section className="text-gray-400 bg-gray-900 body-font h-screen overflow-hidden">
+    loaderActive?<Loader/>:<section className="text-gray-400 h-fit bg-gray-900 body-font overflow-hidden">
       <h1 className="relative top-10 text-xl font-bold text-blue-400 text-center">
         Crime Reports
       </h1>
@@ -41,7 +41,8 @@ function Page() {
           description={crm.description}
           coordinates={{ lat: crm.latitude, long: crm.longitude }}
         />
-      ))}
+      ))} 
+      <div className="w-screen h-16"></div>
     </section>
   );
 }
