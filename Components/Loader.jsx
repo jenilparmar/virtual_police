@@ -3,7 +3,7 @@ import React from "react";
 const Loader = () => {
   return (
 <>
-<div className=" load w-screen h-screen flex flex-col justify-center">
+<div className="load w-screen h-screen flex flex-col justify-center">
       <figure className="self-center">
         <div style={{ "--i": "1" }}></div>
         <div style={{ "--i": "2" }}></div>
