@@ -30,6 +30,7 @@ const Signup = () => {
         data: formData
       });
       if (res.status === 200) {
+    
         router.push('/home');
       }
       setName("");

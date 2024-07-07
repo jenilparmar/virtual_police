@@ -4,17 +4,16 @@ import { MdImageSearch } from "react-icons/md";
 import { IoPerson } from "react-icons/io5";
 import Link from "next/link";
 function page(props) {
+
     return (
         <>
           <section class="text-gray-400 body-font bg-gray-900">
             <div class="container px-5 py-8 mx-auto">
               <div class="flex flex-col text-center w-full mb-8">
-                <h2 class="text-xs  tracking-widest font-medium title-font mb-1">
+                <h2 class="text-xl text-blue-500 font-bold  tracking-widest  title-font mb-1">
                   Welcome
                 </h2>
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-400">
-                 Jenil parmar
-                </h1>
+                
                 <p class="lg:w-2/3 mx-auto leading-tight text-base">
                 Your safety is our priority. While the police department strives to respond quickly, there are times when they may not be able to reach a crime scene immediately.  This is where a revolutionary crime reporting procedure can empower you to take action.  Follow these steps, and together we can make our city safer.
                 </p>

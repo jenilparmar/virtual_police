@@ -11,6 +11,7 @@ function Page() {
   useEffect(() => {
 
     axios.get("https://virtual-police.vercel.app/api/getallData")
+    // axios.get("http://localhost:3000/api/getallData")
   
       .then(res => {
         const data = res.data;
@@ -40,6 +41,7 @@ function Page() {
           mobileNumber={crm.mobileNumber}
           description={crm.description}
           coordinates={{ lat: crm.latitude, long: crm.longitude }}
+          image={crm.photo}
         />
       ))} 
       <div className="w-screen h-16"></div>
