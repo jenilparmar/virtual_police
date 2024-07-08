@@ -19,14 +19,14 @@ function Crime({ crime, date, name, mobileNumber, description, coordinates, imag
               Mobile Number: {mobileNumber?mobileNumber:'Not Given'}
             </h2>
             <p className="leading-relaxed m-2">{description}</p>
-            <Link href={`https://www.google.com/maps?q=${coordinates.lat},${coordinates.long}`} className="link text-blue-400 mx-4 inline-flex items-center mt-4" target='_blank'>
+            <Link href={`https://www.google.com/maps?q=${coordinates.lat},${coordinates.long}`} className="link text-blue-400 mx-2 inline-flex items-center mt-4" target='_blank'>
               Get Location
             </Link>
             {image && (
               <a
                 href={image}
                 download
-                className="photo bg-blue-400 p-2 text-white font-semibold rounded-md inline-block mt-2"
+                className="photo bg-blue-400 p-2 px-8 text-white font-semibold rounded-md inline-block mt-2"
               >
                 Download Photo
               </a>
